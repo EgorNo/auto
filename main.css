@@ -1,0 +1,301 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;    
+    background: #c0c0c0;
+}
+
+.body_hide {
+	opacity: 0;
+	transition: .9s opacity ease-in-out;
+}
+.body_visible {
+	opacity: 1;
+}
+
+header {
+    float: right;
+    width: 99%;
+    
+    font-size: 200%;
+    text-align: center;
+    background: #00acee;
+}
+
+.text {
+    float: left;
+    font-size: 150%;
+    padding-left: 1%;
+}
+
+.left_block {
+
+    margin-top: 0;
+    line-height: 300%;
+}
+
+#auto_o:hover {
+    color: darkorange;
+}
+
+#news_o:hover {
+    color: darkorange;
+}
+
+#test_d:hover {
+    color: darkorange;
+}
+
+.facebook:hover {
+    background: url(facebook_hover.png);
+}
+
+.twitter:hover {
+    background: url(twitter_hover.png);
+}
+
+.vk:hover {
+    background: url(vk_hover.png);
+}
+
+.left_block li {
+    list-style-type: none;
+}
+
+.left_block a {
+    text-decoration: none;
+    color: black;
+    font-size: 150%; 
+}
+
+.new {
+    box-sizing: border-box;
+    margin-left: 1%;
+    padding-top: 6%;
+    background:#C0C0C0 ;
+}
+
+.new img {
+    width: 30%;
+    margin-left:100px;
+}
+
+.auto {
+    box-sizing: border-box;
+    /* border-style: solid; */
+    /* margin-left: 12%; */
+    padding-top: 4%;
+    background:#C0C0C0 ;
+    text-align: center;
+    scroll-margin: 99%;
+    overflow-y: auto;
+
+    
+}
+
+.legko {
+    position: absolute;
+    width: 99%;
+    margin-top: -3% ;
+}
+
+.auto a {
+    text-align: center;
+    font-size: 200%;
+}
+
+
+table img {
+    padding-right: 30%;
+}
+
+table p {
+    font-size: 140%;
+    text-align: center;
+}
+
+hr {
+    border-style: solid;
+}
+
+.news {
+    float: left;
+    text-align: center;
+    padding-left: 2%;
+
+}
+
+.news a {
+    font-size: 200%;
+}
+
+.news p {
+    text-align: left;
+    font-size: 150%;
+}
+
+.test_drive {
+    float: right;
+    width: 99%;
+    text-align: center;
+}
+
+.drive {
+    text-decoration: none;
+    color: darkblue;
+}
+
+.drive:hover {
+    color: red;
+    background: darkblue;
+}
+
+.test {
+    font-size: 200%;
+}
+
+.text_one {
+    text-align: left;
+    font-size: 150%;
+    float: left;
+    padding-left: 1%;
+}
+
+.test_drive img {
+    width: 80%;
+}
+/* подвал */
+footer {
+    box-sizing: border-box;
+    border-style: solid;
+    text-align: center;
+    width: 99%;
+    float: right;
+    font-size: 150%;
+    background: seagreen;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    color: brown;
+}
+/* выдвигающийся блок */
+#panel {
+    position: fixed; /* положение */
+    /* top: 100px; отступ сверху */
+    left: 0; /* отступ слева */
+    background: green; /* цвет фона */
+     width: 5px; /* ширина блока*/
+    height: 100%; /* высота блока */
+    font: 14px Arial; /* размер и тип шрифта */
+    color: #fff; /* цвет текста */
+    text-align: center; /* выравнивание текста по центру */
+    padding: 5px; /* отступы от границ внутри блока */
+
+    -webkit-transition-duration: 0.9s; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 0.9s;
+    -o-transition-duration: 0.9s;
+    transition-duration: 0.9s;
+
+    -webkit-border-radius: 0 5px 5px 0; /* закругление границ для всех браузеров*/
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+    }
+
+/* СКРЫТЫЙ БЛОК */
+#hidden_panel {
+    position: fixed; /* положение */
+     top: 0px;/* отступ сверху */
+    left: -240px; /* отступ слева */
+    background: lavender; /* цвет фона */
+    color: #000; /* цвет текста */
+     width: 220px; /* ширина блока */
+    height: 100%;/* высота блока */
+    padding: 10px; /* отступы от границ внутри блока */
+    text-align: left; /* выравнивание текста */
+    margin-top:0;
+
+    -webkit-transition-duration: 0.9s; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 0.9s;
+    -o-transition-duration: 0.9s;
+    transition-duration: 0.9s;
+
+    -webkit-border-radius: 0 5px 5px 0; /* закругление границ для всех браузеров*/
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+    }
+#panel:hover {
+    left: 240px; /* при наведении выдвигается на скрытые 200px + 20px отступы */
+}
+#panel:hover #hidden_panel {
+    left: 0; /* отступ слева */
+}
+
+/* Блок Комментарий */
+.comments {
+    position: absolute;
+    background-color: #c0c0c0;
+    left: 80%;
+    height: 250px;
+    width: 300px;
+
+}
+
+.com {
+    width: 50px;
+    position:absolute;
+    right: 10px;
+    top: 20px;
+}
+
+/* всплывающий блок */
+
+#hider {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+#hider:checked + .content {
+    display: block;
+}
+#clickme {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-size: 150%;
+}
+
+.content {
+    position: absolute;
+    margin-top: 10px;
+    display: none;
+    background: white;
+    float: left;
+    width: 98%;
+    height: 400px;
+    margin-left: 1%;
+    overflow-x: auto;
+    margin-top: -500px;
+}
+
+.scroll {
+    scroll-margin: 99%;
+    overflow-y: auto;
+}
+
+.content p {
+    text-align: left;
+    margin-left: 1%;
+}
+
+.content .title {
+    font-size: 30px;
+    text-decoration: underline;
+
+}
